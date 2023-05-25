@@ -71,15 +71,17 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
-.header-container{
+.header-container {
     width: 428px;
-  }
+    }
 }
+
 @media only screen and (min-width: 1158px) {
-.header-container{
+.header-container {
     display: flex;
     align-items: center;
-  }
+    width: 1158px;
+    }
 }
 
 /* Logo studio */
@@ -114,6 +116,9 @@ body {
     display: flex;
     align-items: center;
     margin-right: auto;
+}
+.menu-toggle {
+
 }
 
 
@@ -1318,21 +1323,19 @@ body {
   | mobile menu
   |============================
 */
-.burger {
-    
-}
 .menu-toggle {
-    min-height: 40px;
-    min-width: 40px;
+    min-height: 24px;
+    min-width: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
 
     margin: 0;
     padding: 0;
-    background-color: transparent;
+    background-color: var(--light-grayish-blue);
+    
     cursor: pointer;
-    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     outline: none;
 }
@@ -1354,8 +1357,8 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding: 32px;
-    background-color: #3f51b5;
+    padding: 80px 35px 40px 40px;
+    background-color: var(--color-white);
     z-index: 999;
 
     transform: translateX(100%);
@@ -1370,13 +1373,57 @@ body {
     position: absolute;
     top: 16px;
     right: 16px;
-    color: #fff;
+    color: var(--color-navy-blue);
 }
 
 
 .mobile-menu .link {
     display: block;
     padding: 10px;
-    color: #fff;
+    color: var(--color-navy-blue);
     text-decoration: none;
+}
+.mobile-auth {
+    margin-bottom: 48px;
+}
+.mobile-socials {
+    max-width: 328px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.mobile-menu {
+    margin-bottom: auto;
+}
+.mobile-link {
+    font-family: var(--main-font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+.mobile-link:hover,
+.mobile-link:focus {
+    color: var(--color-ocean);
+}
+.mobile-auth-item {
+    font-family: var(--main-font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--color-iris);
+}
+.mobile-auth-mail {
+    font-family: var(--main-font-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    
+    letter-spacing: 0.02em;
+    
+    color: var(--color-slate);
 }

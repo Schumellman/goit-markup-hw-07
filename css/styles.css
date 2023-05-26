@@ -73,7 +73,13 @@ body {
 @media only screen and (max-width: 767px) {
 .header-container {
     width: 428px;
+
     }
+}
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+.header-container{
+    display: flex;
+  }
 }
 
 @media only screen and (min-width: 1158px) {
@@ -163,12 +169,22 @@ body {
 }
 
 .menu-list-address {
+
+}
+@media only screen and (min-width: 1158px) {
+.menu-list-address{
     display: flex;
     align-items: center;
+  }
 }
 
 .address {
     font-style: normal;
+}
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+.address{
+    padding: 16px 0;
+  }
 }
 
 .address-link {
@@ -675,13 +691,6 @@ body {
 .socials-footer {
     
 }
-@media only screen and (max-width: 768px) {
-.socials-footer{
-    margin-bottom: 72px;
-
-    text-align: center;
-  }
-}
 @media only screen and (min-width: 1158px) {
 .socials-footer{
     display: block;
@@ -719,11 +728,9 @@ body {
 }
 @media only screen and (max-width: 768px) {
 .footer-info {
-    margin-left: auto;
     margin-right: auto;
     margin-bottom: 72px;
     width: 268px;
-    text-align: center;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
@@ -1240,6 +1247,7 @@ body {
 .subscribe-form{
     display: flex;
     column-gap: 24px;
+    align-items: start;
   }
 }
 @media only screen and (min-width: 1158px) {
@@ -1276,7 +1284,6 @@ body {
 @media only screen and (max-width: 768px) {
 .subscribe-form-input{
     margin-bottom: 16px;
-    width: 100%;
   }
 }
 

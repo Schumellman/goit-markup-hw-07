@@ -37,6 +37,11 @@
                     </li>
                 </ul>
             </nav>
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="burger-menu" width="32" height="22">
+                    <use href="./images/icons.svg#burger-menu"></use>
+                </svg>
+            </button>
             <address class="address">
                 <ul class="list menu-list-address">
                     <li class="menu-list">
@@ -48,11 +53,7 @@
                     </li>
                 </ul>
             </address>
-            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-                <svg class="burger-menu" width="32" height="22">
-                    <use href="./images/icons.svg#burger-menu"></use>
-                </svg>
-            </button>
+            
         </div>
     </header>
     <!--create a main -->
@@ -144,7 +145,12 @@
                 <h2 class="third-sec-title">Our Team</h2>
                 <ul class="list list-third-sec">
                     <li class="list-team">
-                        <img src="./images/teamimages/img.jpg" alt="Mark Guerrero" width="264" height="260">
+                        <img 
+                        srcset="./images/teamimages/img@1x.jpg 1x, ./images/teamimages/img@2x.jpg 2x"
+                        src="./images/teamimages/img.jpg" 
+                        alt="Mark Guerrero" 
+                        width="264" 
+                        height="260">
                         <div class="card-text">
                             <h3 class="third-sec-name">Mark Guerrero</h3>
                             <p class="third-sec-desc">Product Designer</p>
@@ -185,7 +191,9 @@
                         </div>
                     </li>
                     <li class="list-team">
-                        <img src="./images/teamimages/img1.jpg" alt="Tom Ford" width="264" height="260">
+                        <img
+                        srcset="./images/teamimages/img@1x-1.jpg 1x, ./images/teamimages/img@2x-1.jpg 2x"
+                        src="./images/teamimages/img1.jpg" alt="Tom Ford" width="264" height="260">
                         <div class="card-text">
                             <h3 class="third-sec-name">Tom Ford</h3>
                             <p class="third-sec-desc">Frontend Developer</p>
@@ -226,7 +234,9 @@
                         </div>
                     </li>
                     <li class="list-team">
-                        <img src="./images/teamimages/img2.jpg" alt="Camila Garcia" width="264" height="260">
+                        <img
+                        srcset="./images/teamimages/img@1x-2.jpg 1x, ./images/teamimages/img@2x-2.jpg 2x"
+                        src="./images/teamimages/img2.jpg" alt="Camila Garcia" width="264" height="260">
                         <div class="card-text">
                             <h3 class="third-sec-name">Camila Garcia</h3>
                             <p class="third-sec-desc">Marketing</p>
@@ -267,7 +277,9 @@
                         </div>
                     </li>
                     <li class="list-team">
-                        <img src="./images/teamimages/img3.jpg" alt="Daniel Wilson" width="264" height="260">
+                        <img
+                        srcset="./images/teamimages/img@1x-3.jpg 1x, ./images/teamimages/img@2x-3.jpg 2x "
+                        src="./images/teamimages/img3.jpg" alt="Daniel Wilson" width="264" height="260">
                         <div class="card-text">
                             <h3 class="third-sec-name">Daniel Wilson</h3>
                             <p class="third-sec-desc">UI Designer</p>
@@ -489,15 +501,15 @@
         </button>
     
         <ul class="mobile-menu list">
-            <li><a href="./" class="mobile-link link">Studio</a></li>
+            <li><a href="./" class="mobile-link link color">Studio</a></li>
             <li><a href="./" class="mobile-link link">Portfolio</a></li>
             <li><a href="./" class="mobile-link link">Contacts</a></li>
         </ul>
         <ul class="mobile-auth list">
             <li class="mobile-auth-item">
-                <a class="link" href="tel:110001111111">+11 (000) 111-11-11</a></li>
+                <a class="mobile-contacts-tel link" href="tel:110001111111">+11 (000) 111-11-11</a></li>
             <li class="mobile-auth-mail">
-                <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <a class="mobile-contacts-email link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
         </ul>
         <ul class="mobile-socials list">
             <li class="socials-item">
